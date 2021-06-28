@@ -5,11 +5,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
+    <script
+      src="https://kit.fontawesome.com/f4767415e3.js"
+      crossorigin="anonymous"
+    ></script>
     <link href="css/owfont-regular.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="static/css/style.css" />
   </head>
   <body>
-    <div class="location">
+    <section class="container">
+      <div class="quote1">
+        <p><span>"</span>Happines is not by chance its by choice."</p>
+        <p><span>"</span>Wait life goes faster than you think."</p>
+        <p><span>"</span>Life is a gift wake up everyday and realize."</p>
+      </div>
+      <div class="weather">
+        <h1>What can i do today..?</h1>
+        <div class="weather__temperature">
+          <div class="temperature">
+            <h2 class="temperature-degree">temperature</h2>
+            <span>F</span>
+          </div>
+          <i id="temperature-icon" class="icon"></i>
+        </div>
+      </div>
+    </section>
+
+    <h1 class="suggest-places">Places to Visit!</h1>
+    <section class="place-container container">
+      <div class="places">
+        <!-- <div class="place">
+          <div class="place__image">
+            <img src="/images/bluffers-park.jpg" alt="" />
+          </div>
+          <div class="place__name">
+            <h1>Place Name</h1>
+          </div>
+          <div class="place__address">
+            <p>
+              <i class="fas fa-map-marker-alt"></i>Here is a address. more than
+              a line address is here.
+            </p>
+          </div>
+        </div>
+        <div class="place">
+          <div class="place__image"></div>
+          <div class="place__address">
+            <p>
+              <i class="fas fa-map-marker-alt"></i>Here is a address. more than
+              a line address is here.
+            </p>
+          </div>
+          <div class="place__description">
+            <p>
+              <span>ABOUT</span>Here is a short description of the place which
+              is of two lines.
+            </p>
+          </div>
+        </div>
+        <div class="place">
+          <div class="place__image"></div>
+          <div class="place__address">
+            <p>
+              <i class="fas fa-map-marker-alt"></i>Here is a address. more than
+              a line address is here.
+            </p>
+          </div>
+          <div class="place__description">
+            <p>
+              <span>ABOUT</span>Here is a short description of the place which
+              is of two lines.
+            </p>
+          </div>
+        </div>
+        <div class="place">
+          <div class="place__image"></div>
+          <div class="place__address">
+            <p>
+              <i class="fas fa-map-marker-alt"></i>Here is a address. more than
+              a line address is here.
+            </p>
+          </div>
+          <div class="place__description">
+            <p>
+              <span>ABOUT</span>Here is a short description of the place which
+              is of two lines.
+            </p>
+          </div>
+        </div>
+        <div class="place">
+          <div class="place__image"></div>
+          <div class="place__address">
+            <p>
+              <i class="fas fa-map-marker-alt"></i>Here is a address. more than
+              a line address is here.
+            </p>
+          </div>
+          <div class="place__description">
+            <p>
+              <span>ABOUT</span>Here is a short description of the place which
+              is of two lines.
+            </p>
+          </div>
+        </div>
+        <div class="place">
+          <div class="place__image"></div>
+          <div class="place__address">
+            <p>
+              <i class="fas fa-map-marker-alt"></i>Here is a address. more than
+              a line address is here.
+            </p>
+          </div>
+          <div class="place__description">
+            <p>
+              <span>ABOUT</span>Here is a short description of the place which
+              is of two lines.
+            </p>
+          </div>
+        </div> -->
+
+        <!-- <div class="weather__location">
+          <div class="location">
+            <h4>Location:</h4>
+            <h2 class="location-timezone">City Name</h2>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- <div class="location">
       <h1 class="location-timezone">Timezone</h1>
       <i class="hiii" id="icon"></i>
     </div>
@@ -19,7 +143,7 @@
         <span>F</span>
       </div>
       <div class="temperature-description">Its friggin cold</div>
-    </div>
+    </div> -->
     <script src="app.js"></script>
   </body>
 </html>

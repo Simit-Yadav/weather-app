@@ -1,0 +1,89 @@
+.suggest-places {
+  border-bottom: 2px solid;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-size: clamp(1rem, calc(2vw + 1rem), 3rem);
+
+  @include breakpoint-up(medium) {
+    display: inline-block;
+  }
+}
+
+.place-container {
+  width: 100vw;
+  height: 58vh;
+  padding: 1rem 1.5rem 0 1.5rem;
+  overflow-y: hidden;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.places {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 2rem;
+  white-space: nowrap;
+}
+
+.place {
+  color: #000;
+  min-width: 80%;
+  border: 1px solid black;
+  border-radius: 10px;
+  white-space: normal;
+  background-color: #f8f8ff;
+  height: min-content;
+  // background-color: #d14545;
+  // background-image: linear-gradient(316deg, #e16464 0%, #f1a457 74%);
+  // display: inline-block;
+
+  &__image {
+    height: 40%;
+    width: 100%;
+    border-radius: 10px;
+    // background-image: url("/images/bluffers-park.jpg");
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__name {
+    margin: 0.5rem;
+  }
+
+  &__address {
+    margin: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: 400px) {
+    min-width: 60%;
+  }
+
+  @media (min-width: 600px) {
+    min-width: 40%;
+
+    &__image {
+      height: 55%;
+    }
+  }
+
+  @media (min-width: 900px) {
+    min-width: 20%;
+
+    &__image {
+      height: 55%;
+    }
+  }
+}
