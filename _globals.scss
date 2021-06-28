@@ -29,7 +29,8 @@ p {
 
 .container {
   .quote1 {
-    display: none;
+    // display: none;
+    padding: 1rem;
     text-transform: capitalize;
 
     p > span {
@@ -37,7 +38,7 @@ p {
     }
 
     p {
-      font-size: 1.5rem;
+      font-size: 1rem;
       font-weight: 700;
       letter-spacing: 2px;
     }

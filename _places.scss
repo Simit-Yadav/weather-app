@@ -1,5 +1,5 @@
 .suggest-places {
-  border-bottom: 2px solid;
+  border: 2px groove;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   margin-bottom: 1rem;
@@ -9,6 +9,8 @@
 
   @include breakpoint-up(medium) {
     display: inline-block;
+    border: 0;
+    border-bottom: 1px solid;
   }
 }
 
