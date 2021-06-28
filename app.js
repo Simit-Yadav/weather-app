@@ -56,7 +56,7 @@ window.addEventListener("load", () => {
       lat = position.coords.latitude;
 
       const key = "368f8b9aabddae7f381d86494f8cce56";
-      const weatherApi = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key}&units=imperial`;
+      const weatherApi = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key}&units=imperial`;
 
       fetch(weatherApi, {
         method: "GET",
