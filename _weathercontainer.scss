@@ -37,6 +37,11 @@
   &__temperature {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+
+    p {
+      font-size: 1.5rem;
+    }
 
     .temperature {
       display: flex;

@@ -19,9 +19,16 @@
   height: 58vh;
   padding: 1rem 1.5rem 0 1.5rem;
   overflow-y: hidden;
+
   &::-webkit-scrollbar {
     display: none;
   }
+}
+
+.noplaces {
+  padding: 2rem;
+  font-size: 1rem;
+  margin-top: 2rem;
 }
 
 .places {
@@ -30,6 +37,7 @@
   display: flex;
   gap: 2rem;
   white-space: nowrap;
+  // justify-content: center;
 }
 
 .place {
@@ -43,6 +51,10 @@
   // background-color: #d14545;
   // background-image: linear-gradient(316deg, #e16464 0%, #f1a457 74%);
   // display: inline-block;
+
+  @include breakpoint-up(medium) {
+    max-width: 25%;
+  }
 
   &__image {
     height: 40%;
